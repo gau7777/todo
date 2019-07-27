@@ -1,0 +1,16 @@
+<div class="p">Task List</div>
+
+<!-- <p [ngStyle]="{backgroundColor: red}">{{ 'Server' }} with ID {{ serverId }} is {{ serverName }}</p> -->
+<div class="ul">
+  <li *ngFor="let load of loadedposts; let i = index">
+    {{ load.Name }}
+    <button (click)="onDelete(load.id,i)">
+      DELETE
+    </button>
+    <button>
+      VIEW
+    </button>
+  </li>
+
+</div>
+

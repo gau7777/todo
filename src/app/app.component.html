@@ -1,0 +1,21 @@
+<html>
+  <body>
+    <!-- <input type="submit" value="+ Next" class="nextbutton" [disabled]="!allowNewServer" (click)="onCreateServer()"> -->
+
+      <input type="submit" value="+ Next" class="color" (click)="display();">
+
+      <br>
+      <br>
+
+      <table>
+        <tr>
+          <td><app-list [child]="pf"></app-list></td>
+          <td><app-form *ngIf="load" (onClick)="recieve($event)"></app-form></td>
+        </tr>
+      </table>
+
+      <!-- <p>{{ f }}</p> -->
+
+
+  </body>
+</html>
